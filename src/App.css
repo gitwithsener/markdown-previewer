@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.container {
+  display: inline-flex;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.editor-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  min-width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 45px;
+  margin-left: 150px;
+}
+
+.maximized {
+  height: auto;
+}
+.previewer-wrap {
+  min-width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  margin-top: 45px;
+}
+#bar {
+  border: 2px solid;
+  display: flex;
+  box-shadow: 2px 1px 12px 2px gray;
+  width: 60%;
+  margin-bottom: -2px;
+  color: rgb(225, 210, 252);
+  background-color: rgb(80, 10, 74);
+  align-items: center;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+span {
+  flex-grow: 1;
+}
+
+
+#editor {
+  width: 60%;
+  height: 80vh;
+  /* border-radius: 10px; */
+  resize: none;
+  overflow: auto;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: rgb(255, 240, 249);
+  /* justify-content: center; */
+  border: 2px solid;
+}
+
+#preview {
+  width: 80%;
+  height: 80vh;
+  overflow: auto;
+  /* border-radius: 20px; */
+  padding: 20px;
+  border: 2px solid;
+  border-color:aliceblue;
+  /* margin-top: 20px; */
+  background-color: rgb(29, 49, 49);
+  color:antiquewhite;
+  resize: none;
+}
+
+.bar {
+  border: 2px solid;
+  display: flex;
+  box-shadow: 2px 1px 12px 2px gray;
+  width: 80%;
+  margin-bottom: -2px;
+  color: rgb(225, 210, 252);
+  background-color: rgb(80, 10, 74);
+  align-items: center;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: rgb(196, 195, 195);
+  padding: 5px;
+  line-height: 1.2;
+  color:darkolivegreen;
+  border-radius: 10px;
+}
+
+code {
+  background-color: #555555;
+  color: #f1e1e1;
+  padding: 0.1vw 1vw;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    flex-direction: row;
+    width: 80%;
+    color: hsl(244, 86%, 34%);
+  }
+
+  #editor {
+    width: 60%;
+    height: 75vh;
+  }
+
+  #preview {
+    width: 80%;
+    height: 75vh;
+    /* margin-right: 10px; */
+    margin-top: 0;
+  } 
+}
